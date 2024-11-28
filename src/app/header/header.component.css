@@ -1,0 +1,110 @@
+/* General Header Styling */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: #ffffff;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-image {
+  height: 40px;
+  width: auto;
+}
+
+.categories {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+}
+
+/* Search Bar Styling */
+.search-bar {
+  display: flex;
+  align-items: center;
+  background-color: #fff; /* White background */
+  border-radius: 30px; /* Rounded corners */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  padding: 5px 10px;
+  max-width: 500px; /* Adjust width */
+  margin: 0 auto; /* Center horizontally */
+}
+
+.menu-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.menu-button mat-icon {
+  font-size: 20px;
+  color: #333; /* Dark gray color for menu icon */
+}
+
+.search-input {
+  flex: 1; /* Takes up remaining space */
+  border: none;
+  outline: none;
+  padding: 10px;
+  font-size: 16px;
+  color: #333;
+  border-radius: 30px; /* Ensures no corners cut through input */
+}
+
+.search-input::placeholder {
+  color: #999; /* Lighter text for placeholder */
+}
+
+.search-button {
+  background-color: #9b51e0; /* Purple background */
+  border: none;
+  border-radius: 50%; /* Circle button */
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.search-button mat-icon {
+  color: white; /* White search icon */
+  font-size: 20px;
+}
+
+.search-button:hover {
+  background-color: #7a3fb8; /* Darker purple on hover */
+}
+
+
+
+
+/* Header Buttons Styling */
+.header-buttons {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.header-buttons a[mat-button] {
+  text-transform: none;
+  color: #333;
+}
+
+.header-buttons a[mat-raised-button] {
+  text-transform: none;
+}
+
+/* Hover Effect for Buttons */
+.header-buttons a:hover {
+  color: #007bff;
+}

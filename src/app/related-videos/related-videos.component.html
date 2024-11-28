@@ -1,0 +1,17 @@
+<div class="related-videos-container">
+    <h3>Related Videos</h3>
+    <div class="video-grid">
+      <div
+        class="video-clip"
+        *ngFor="let video of relatedVideos"
+        (click)="selectVideo(video)"
+      >
+        <video width="100%">
+          <source [src]="video.path" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <p>{{ video.title }}</p>
+      </div>
+    </div>
+  </div>
+  

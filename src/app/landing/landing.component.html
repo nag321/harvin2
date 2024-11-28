@@ -1,0 +1,434 @@
+<header class="header">
+  <div class="container">
+    <!-- Logo -->
+    <div class="logo">
+      <img
+        src="assets/images/Harvin.png"
+        alt="Harvin Logo"
+        class="logo-image"
+        style="height: 90px; width: 90px; border-radius:50%; background-color:white;"
+      />
+       <br><br>
+    </div>
+
+    <!-- Search Bar -->
+    <div class="search-bar">
+      <button class="menu-button">
+        <mat-icon>menu</mat-icon>
+      </button>
+      <input type="text" placeholder="Search" class="search-input" />
+      <button class="search-button">
+        <mat-icon>search</mat-icon>
+      </button>
+    </div>
+
+    <!-- Navigation Links -->
+    <nav class="nav">
+      <ul class="nav-list">
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#about-us" class="nav-link">About Us</a></li>
+        <li><a href="#contact-us" class="nav-link">Contact Us</a></li>
+      </ul>
+    </nav>
+
+    <!-- User Profile Dropdown -->
+    <div class="user-profile">
+      <mat-icon class="profile-icon" (click)="toggleProfileMenu()">person</mat-icon>
+      <div *ngIf="showProfileMenu" class="profile-menu" (click)="$event.stopPropagation()">
+        <ul>
+          <li>
+            <a href="/login" (click)="navigateToPage($event, '/login')">Login</a>
+          </li>
+          <li>
+            <a href="/signup" (click)="navigateToPage($event, '/signup')">Signup</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+
+  
+<div class="banner">
+  <!-- Left Section -->
+  <div class="banner-text">
+    <h1 style="color: #31337e;">
+      <span class="highlight">Studying</span> Online is now<br />
+      much easier
+    </h1>
+    <b style="color: black;">
+      Skilline is an interesting platform that will teach you in a more interactive way.
+    </b><br><br>
+    <a href="/login" class="join-button">Join for free</a>
+  </div>
+
+  <!-- Right Section -->
+  <div class="banner-image">
+    <img src="assets/images/course.png" height="600px" width="600px" alt="Student" class="student-image" />
+  </div>
+</div>
+
+
+
+
+
+<h2 style="color: #136ffb; text-align: center;">Why You Choose Us!</h2> 
+<!-- Paragraph -->
+<p style="text-align: center; color: #555; font-size: 1.2rem; margin-bottom: 30px;">
+  Skilline is one powerful online software suite that combines all the tools needed to run a successful school or office.
+</p>
+
+  <div class="features-section">
+   
+    <div class="feature-card">
+      <div class="icon-container">
+        <img
+  src="assets/images/file-invoice.png"
+  alt="AI Enabled Icon"
+  class="icon"
+  style="filter: invert(34%) sepia(64%) saturate(3353%) hue-rotate(222deg) brightness(93%) contrast(90%);"
+/>
+        
+      </div>
+      <h3>Live Classes</h3>
+      <p>One-on-one interaction with students, and you can get access to archived classes for future reference as well as live interactive sessions with their mentors.</p>
+    </div>
+  
+    <div class="feature-card">
+      <div class="icon-container">
+        
+        <img
+  src="assets/images/calendar.png"
+  alt="Live Classes Icon"
+  class="icon"
+  style="filter: invert(39%) sepia(78%) saturate(691%) hue-rotate(2deg) brightness(97%) contrast(101%);"
+/>
+      </div>
+      <h3>Real-time live projects</h3>
+      <p>As we know, practical knowledge plays a crucial role in a professional career, and here you will get a great opportunity to develop skills acquired during the program.</p>
+    </div>
+  
+    <div class="feature-card">
+      <div class="icon-container">
+        
+        <img
+  src="assets/images/users.png"
+  alt="Real-time Projects Icon"
+  class="icon"
+  style="filter: invert(64%) sepia(25%) saturate(5686%) hue-rotate(179deg) brightness(96%) contrast(96%);"
+/>
+      </div>
+      <h3>AI enabled LMS account</h3>
+      <p>An LMS is a software application that enables the delivery of online learning content to users. It also provides tools for tracking student progress.</p>
+    </div>
+  </div>
+  
+
+ 
+  
+  
+  <!-- Featured Courses Section -->
+ 
+
+
+
+
+
+  
+  
+  
+  
+  
+
+
+
+
+
+  <div class="card-container">
+    <div class="card">
+       <img src="assets/images/cyber.jpeg" alt="AI & ML">
+       <h2 style="color: blue;">Cyber Security</h2>
+       <p style="color: blueviolet;">Start a class today</p>
+    </div>
+    <div class="card">
+      <img src="assets/images/Ai.jpeg" alt="IoT">
+      <h2 style="color: blue;">IOT</h2>
+      <p style="color: blueviolet;">Start a class today</p>
+    </div>
+    <div class="card">
+      <img src="assets/images/DataScience.jpeg" alt="Data Science">
+      <h2 style="color: blue;">DataScience</h2>
+      <p style="color: blueviolet;">Start a class today</p>
+    </div>
+    <div class="card">
+      <img src="assets/images/Ai.jpeg" alt="Web Development">
+      <h2 style="color: blue;">AI & ML</h2>
+      <p style="color: blueviolet;">Start a class today</p>
+    </div>
+  </div>
+  
+  <div class="center">
+    <div class="search-bar">
+      <button class="menu-button">
+        <mat-icon>menu</mat-icon>
+      </button>
+      <input type="text" placeholder="Search" class="search-input" />
+      <button class="search-button">
+        <mat-icon>search</mat-icon>
+      </button>
+    </div>
+  </div>
+
+
+   <!-- our mentors  -->
+
+   <section class="mentors-section">
+    <h2 style="color: #136ffb;">TOP COURSES</h2>
+    <p style="text-align: center; color: #555; font-size: 1.2rem; margin-bottom: 20px; line-height: 1.5em ;">
+      Skilline is a platform that allows educators to create online<br>
+       classes whereby they can store the course materials online;<br> 
+        manage assignments, quizzes, and exams; monitor due dates;<br>
+       grade results and provide students with feedback all in one place.<br>
+    </p>
+    
+    <div class="mentors-container">
+      <!-- Card 1 -->
+      <div class="mentor-card">
+        <a href="/topcourses">  <img src="assets/images/DataScience.jpeg" alt="Mentor" class="mentor-image" /></a>
+        <h3 style="color: blue;">IOT</h3>
+        <p class="mentor-info" style="color: blueviolet;">Professor</p>
+        <p class="mentor-description" style="color: blueviolet;">
+          Ut enim ad minim veniam, quis nost exercitation ullamco laboris nisi ut aliquip ex commodo.
+        </p>
+        <a href="#" class="mentor-link">Enroll the classes</a>
+      </div>
+  
+      <!-- Card 2 -->
+      <div class="mentor-card">
+        <a href="/topcourses"> <img src="assets/images/cyber.jpeg" alt="Mentor" class="mentor-image" /></a>
+        <h3 style="color: blue;">Data Science</h3>
+        <p class="mentor-info" style="color: blueviolet;">Professor </p>
+        <p class="mentor-description" style="color: blueviolet;">
+          Learn from world-class experts with hands-on projects and deep insights.
+        </p>
+        <a href="#" class="mentor-link">Enroll the classes</a>
+      </div>
+  
+      <!-- Card 3 -->
+      <div class="mentor-card">
+        <a href="/topcourses"> <img src="assets/images/Ai.jpeg" alt="Mentor" class="mentor-image" /></a>
+        <h3 style="color: blue;">AI and ML</h3>
+        <p class="mentor-info" style="color: blueviolet;">Professor</p>
+        <p class="mentor-description" style="color: blueviolet;">
+          Dive into the world of Artificial Intelligence and Machine Learning with expert guidance.
+        </p>
+        <a href="#" class="mentor-link">Enroll the classes</a>
+      </div>
+  
+      <!-- Card 4 -->
+      <div class="mentor-card">
+        <a href="/topcourses"> <img src="assets/images/Ai.jpeg" alt="Mentor" class="mentor-image" /></a>
+        <h3 style="color: blue;">Cyber Security</h3>
+        <p class="mentor-info" style="color: blueviolet;">Professor</p>
+        <p class="mentor-description" style="color: blueviolet;">
+          Understand cyber risks and learn how to safeguard your digital world.
+        </p>
+        <a href="#" class="mentor-link">Enroll the classes</a>
+      </div>
+      
+      
+      
+    </div>
+    </section>
+   <!-- trusted section  -->
+  <!-- <section class="trusted-section">
+    <h2 style="color:#136ffb;">Trusted by 500+ Mentors</h2>
+    <div class="logo-container">
+      <div class="logo">
+        <img src="assets/images/microsoft.jpeg" alt="Google Logo" style="height: 200px; width: 200px;" />
+
+      </div>
+      <div class="logo">
+        <img src="assets/images/ibm.jpeg" alt="Netflix Logo" style="height: 200px; width: 200px;"  />
+      </div>
+      <div class="logo">
+        <img src="assets/images/dxc.jpeg" alt="Airbnb Logo" style="height: 200px; width: 200px;"  />
+      </div>
+      <div class="logo">
+        <img src="assets/images/amzon.jpeg" alt="Amazon Logo" style="height: 200px; width: 200px;"  />
+      </div>
+      <div class="logo">
+        <img src="assets/images/star.jpeg" alt="DXC Logo" style="height: 200px; width: 200px;"  />
+      </div>
+    </div>
+  </section> -->
+  
+  
+  <!-- <section id="testimonials" class="testimonials-section">
+    <h2>What Our Students Say</h2>
+    <div id="testimonialCarousel" class="carousel">
+      <div class="carousel-inner">
+        <div
+          *ngFor="let testimonial of testimonials; let i = index"
+          [ngClass]="{ 'carousel-item': true, active: i === 0 }"
+        >
+          <div class="card shadow-sm rounded-3">
+            <div class="card-body">
+              <p class="card-text">{{ testimonial.text }}</p>
+              <div class="d-flex align-items-center pt-2">
+                <img
+                  [src]="testimonial.image"
+                  alt="testimonial"
+                  class="rounded-circle"
+                />
+                <div>
+                  <h5 class="card-title fw-bold">{{ testimonial.name }}</h5>
+                  <span class="text-secondary">{{ testimonial.position }}</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        (click)="scrollPrev('testimonialCarousel')"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        (click)="scrollNext('testimonialCarousel')"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </section> -->
+  <div class="testimonial-section">
+    <div class="testimonial-container">
+      <!-- Card 1 -->
+      <div class="testimonial-card">
+        <p class="testimonial-text">
+          "Thank you so much for your help. It's exactly what I've been looking for. You won't regret it. It really saves me time and effort. Skilline is exactly what our business has been lacking."
+        </p>
+        <h4 class="testimonial-author">Ajay.K</h4>
+        <div class="testimonial-rating">
+          <span>⭐⭐⭐⭐⭐</span>
+          <p>12 reviews at Yelp</p>
+        </div>
+      </div>
+  
+      <!-- Card 2 -->
+      <div class="testimonial-card">
+        <p class="testimonial-text">
+          "Skilline has completely transformed the way we work. The team is incredibly supportive, and the platform is so intuitive!"
+        </p>
+        <h4 class="testimonial-author">Samantha.L</h4>
+        <div class="testimonial-rating">
+          <span>⭐⭐⭐⭐⭐</span>
+          <p>20 reviews at Yelp</p>
+        </div>
+      </div>
+  
+      <!-- Card 3 -->
+      <div class="testimonial-card">
+        <p class="testimonial-text">
+          "An amazing experience! Highly recommend it to anyone looking for seamless integration and productivity improvements."
+        </p>
+        <h4 class="testimonial-author">Rahul.M</h4>
+        <div class="testimonial-rating">
+          <span>⭐⭐⭐⭐⭐</span>
+          <p>15 reviews at Yelp</p>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <p class="testimonial-text">
+          "An amazing experience! Highly recommend it to anyone looking for seamless integration and productivity improvements."
+        </p>
+        <h4 class="testimonial-author">Rahul.M</h4>
+        <div class="testimonial-rating">
+          <span>⭐⭐⭐⭐⭐</span>
+          <p>15 reviews at Yelp</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+
+
+
+
+
+  <!-- Footer Section -->
+
+
+
+  <footer class="footer">
+    <div class="footer-container">
+      <!-- Left Section -->
+      <div class="footer-left">
+        <p>
+          Study any topic, anytime. Explore thousands of courses for the lowest
+          price ever!
+        </p>
+      </div>
+  
+      <!-- Middle Section -->
+      <div class="footer-middle">
+        <h3>Top Categories</h3>
+        <ul>
+          <li><a href="#">Infrastructure</a></li>
+          <li><a href="#">IoT</a></li>
+          <li><a href="#">Artificial Intelligence</a></li>
+          <li><a href="#">Machine Learning</a></li>
+          <li><a href="#">Cyber Security</a></li>
+          <li><a href="#">Data Science</a></li>
+        </ul>
+      </div>
+  
+      <!-- Right Section -->
+      <div class="footer-right">
+        <h3>Help</h3>
+        <ul>
+          <li><a href="#">About us</a></li>
+          <li><a href="#">Privacy policy</a></li>
+          <li><a href="#">Terms and conditions</a></li>
+          <li><a href="#">Refund policy</a></li>
+        </ul>
+      </div>
+    </div>
+  
+    <!-- Bottom Section -->
+    <div class="footer-bottom">
+      <div class="footer-bottom-container">
+        <!-- Logo Section -->
+        <div class="footer-logo">
+          <img src="assets/images/Harvin.png" alt="Harvin Logo" style="height: 90px; width: 90px; border-radius:50%; background-color:white;"/>
+          
+        </div>
+  
+        <!-- Footer Links -->
+        <div class="footer-links">
+          <a href="#">Careers</a> | 
+          <a href="#">Privacy Policy</a> | 
+          <a href="#">Terms & Conditions</a>
+        </div>
+  
+        <!-- Footer Text -->
+        <p>&copy; 2024 Online Class Technologies Inc.</p>
+  
+        <!-- Language Button -->
+        <button class="language-button">English</button>
+      </div>
+    </div>
+  </footer>
+  
+ 
+  

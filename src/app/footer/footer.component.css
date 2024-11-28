@@ -1,0 +1,136 @@
+/* footer section css  */
+
+
+.footer {
+  background-color: #20224f; /* Modern dark color */
+  color: #fff; /* Light text color for contrast */
+  font-family: 'Arial', sans-serif;
+  padding: 40px 20px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+  border-bottom: 1px solid #444; /* Subtle separator */
+  padding-bottom: 30px;
+}
+
+.footer-left,
+.footer-middle,
+.footer-right {
+  flex: 1;
+}
+
+.footer-left p {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.6;
+}
+
+.footer-middle h3,
+.footer-right h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #9b51e0; /* Highlight heading */
+}
+
+.footer-middle ul,
+.footer-right ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-middle ul li,
+.footer-right ul li {
+  margin-bottom: 10px;
+}
+
+.footer-middle ul li a,
+.footer-right ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.footer-middle ul li a:hover,
+.footer-right ul li a:hover {
+  color: #9b51e0; /* Hover effect */
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.footer-bottom-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 10px;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-logo img {
+  height: 40px;
+  width: 40px;
+}
+
+.footer-logo span {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #fff;
+  margin: 0 10px;
+  font-size: 14px;
+  font-weight: 400;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover {
+  color: #9b51e0; /* Hover effect */
+}
+
+.language-button {
+  background-color: #9b51e0;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s;
+}
+
+.language-button:hover {
+  background-color: #7a3fb8; /* Darker hover effect */
+}
+
+@media screen and (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-bottom-container {
+    flex-direction: column;
+    gap: 15px;
+  }
+}

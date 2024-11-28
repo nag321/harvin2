@@ -1,0 +1,179 @@
+/* General Styling */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #eee4e2;
+  color: #333;
+}
+
+
+
+/* Main Content */
+.main-content {
+  padding: 20px;
+}
+
+.main-container {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 20px;
+}
+
+.main-section {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.main-image {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.sidebar {
+  background: #f0f4ff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.course-price-box {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.btn-primary {
+  background-color: #ff4c61;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.course-reviews, .skill-box {
+  margin-top: 20px;
+}
+
+.skill-box .btn-secondary {
+  background-color: #007bff;
+  color: #fff;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+/* Mentors Section */
+.mentors-section {
+  padding: 2rem;
+  background-color: #eee4e2; /* Light background color */
+  text-align: center;
+  
+}
+
+.mentors-section h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+.mentors-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
+  gap: 1.5rem; /* Space between cards */
+  justify-items: center;
+  margin-left:70px; /* Center cards */
+}
+
+/* Mentor Card Styling */
+/* Mentors Section */
+.mentors-section {
+  padding: 2rem;
+  background-color: #eee4e2; /* Light background color */
+  text-align: center;
+  overflow: hidden; /* Ensure no overflow for scrolling effect */
+}
+
+.mentors-section h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+.mentors-container {
+  display: flex; /* Change to flex for smooth horizontal scrolling */
+  gap: 1.5rem; /* Space between cards */
+  animation: scrollMentors 15s linear infinite; /* Smooth scrolling animation */
+  width: max-content; /* Ensure the width adjusts dynamically to content */
+}
+
+/* Mentor Card Styling */
+.mentor-card {
+  background-color: #eee4e2;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 1.5rem;
+  width: 300px; /* Fixed width for all cards */
+  height: 400px; /* Fixed height for consistency */
+  flex-shrink: 0; /* Prevent cards from shrinking */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.mentor-image {
+  width: 100%;
+  height: 150px;
+  object-fit: cover; /* Ensure the image fits within the card */
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.mentor-card h3 {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.mentor-info {
+  font-size: 0.9rem;
+  color: #777;
+  margin-bottom: 1rem;
+}
+
+.mentor-description {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 1.5rem;
+}
+
+.mentor-link {
+  color: #1e90ff;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.mentor-link:hover {
+  color: #0073e6;
+}
+
+
+/* videosection */
+
+
+.main-video {
+  width: 100%; /* Make it responsive to the parent container */
+  max-width: 600px; /* Optional: Set a maximum width */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow for a modern look */
+  margin-bottom: 20px; /* Space below the video */
+}
